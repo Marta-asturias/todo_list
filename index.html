@@ -5,32 +5,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>todo_list</title>
 </head>
+<header>
+    <h1 class="titulo">Simple Todo List</h1>
+</header>
 
 <body>
 
+<h4>Edit Todo</h4>
+ <div class="datos">
     <form action="javascript:void(0);" method="POST" onsubmit="app.Add()">
-        <input type="text" id="add-name" placeholder="New datas">
+        <input type="text" id="add-name" placeholder="New datas" >
         <input type="submit" value="Add">
     </form>
+</div>
 
-    <div id="spoiler" role="aria-hidden">
+    <div id="spoiler" role="aria-hidden" style="display: none;">
         <form action="javascript:void(0);" method="POST" id="saveEdit">
             <input type="text" id="edit-name">
             <input type="submit" value="Edit" /> <a onclick="CloseInput()" aria-label="Close">&#10006;</a>
         </form>
     </div>
-
-    <p id="counter"></p>
-
-    <table>
+    <table class="usuarios">
         <tr>
-            <th>Name</th>
+            <th>Todo Options</th>
         </tr>
         <tbody id="datas">
         </tbody>
     </table>
+
+   
+
+ 
 
 
 </body>

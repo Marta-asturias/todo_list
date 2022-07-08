@@ -9,10 +9,8 @@ var app = new function() {
       if (data > 1) {
         name = 'datas';
       }
-      el.innerHTML = data + ' ' + name ;
-    } else {
-      el.innerHTML = 'No ' + name;
-    }
+
+    } 
   };
   
   this.FetchAll = function() {
